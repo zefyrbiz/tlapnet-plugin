@@ -1,0 +1,69 @@
+<div accordion close-others="false">
+  <div accordion-group ng-repeat="service in services" is-open="service.open" class="tscount{{service.Tariffs.length}}">
+    <div class="tscount{{service.Tariffs.length}}">
+      <div accordion-heading>
+        <span class="open-{{service.open}}" ng-click="toggleService(service)"><em class="ui-icon"></em> {{service.Name}}</span>
+      </div>
+      <div ng-repeat="tariff in service.Tariffs" ng-click="selectTariff(tariff)" ng-class="{last: $last}" class="tk tko{{tariff.visible}} tz-{{service.Css}}">
+        <h2>{{tariff.Name}}</h2><em></em>
+      </div>
+      <div class="cleaner"></div>
+
+      <div ng-repeat="tariff in service.Tariffs">
+        <div ng-if="tariff.visible">
+          <div ng-repeat="package in tariff.Packages" ng-click="togglePackage(package)" ng-class="{last: $last}" class="tkitem tkitemo{{package.selected}}">
+            <h3>{{package.Name}}</h3>
+            <div class="tsdesc">{{package.Description}}</div>
+            <div class="tsdown">
+              <div ng-if="service.Id=='INTERNET'">
+                <span ng-if="package.Speed">{{package.Speed}}</span>
+              </div>
+              <div ng-if="service.Id=='PHONE'">
+                <span ng-if="package.Speed">{{package.Speed}}</span>
+              </div>
+              <div ng-if="service.Id=='BAL'">
+                <span ng-if="package.Speed">{{package.Speed}}</span>
+              </div>
+              <strong ng-if="package.Download">{{package.Download}}</strong>
+            </div> 
+            <div class="tsupload">
+              <div ng-if="service.Id=='INTERNET'">
+                <span ng-if="package.Speedup">{{package.Speedup}}</span>  
+              </div>
+              <div ng-if="service.Id=='TV'">
+              </div>            
+              <div ng-if="service.Id=='PHONE'">
+                <span ng-if="package.Speedup">{{package.Speedup}}</span>              
+              </div> 
+              <div ng-if="service.Id=='BAL'">
+                <span ng-if="package.Speedup">{{package.Speedup}}</span>              
+              </div>
+            </div>
+            <div ng-repeat="price in package.Prices">
+              <strong ng-if="price.Type == 'BEZNA_CENA'">
+                <em></em> 
+                <span class="tkdesc">{{price.Description}}</span> 
+                <span class="tkprice">{{price.MonthlyPayment}},- Kč</span>  
+              </strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cleaner"></div>
+
+      <div ng-repeat="tariff in service.Tariffs" class="tkpack">
+        <div ng-repeat="package in tariff.Packages">
+          <div ng-if="package.selected && package.Channels">
+            <h3>Tématické balíčky {{package.channelSelected}}</h3>
+            <label ng-repeat="channel in package.Channels" ng-click="toggleChannel(channel)" class="tkitem tkitemo{{channel.selected}}">
+              <h3>{{channel.Name}}</h3>          
+              <div class="tkpprice">Měsíčně {{channel.Price}},- Kč</div>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="cleaner"></div>
+    </div>    
+  </div>
+</div>

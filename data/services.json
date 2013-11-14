@@ -1,0 +1,643 @@
+[
+  {
+    "Id" : "INTERNET",
+    "Name": "Internet",
+    "Css": "s1",    
+    "Description": "popis internetu",
+    "Tariffs": [
+      {
+        "Id" : "INTERNET_T1",
+        "Name": "Bezdrátové připojení",
+        "Description": "Cenově dostupné připojení pro každého",
+        "Notice": "Ceny jsou uvedeny s DPH.",
+        "Packages": [
+         {
+            "Id" : "1_A",
+            "Name" : "Nespěchám",
+            "Description" : "Ekonomické připojení pro nenáročné uživatele",
+            "Speed": "rychlost stahování až",
+            "Download" : "8 MB/s",
+            "Prices" : [
+              {
+                "Type" : "BEZNA_CENA",
+                "Description" : "běžná cena",
+                "MonthlyPayment" : "299"
+              },
+              {
+                "Type" : "PREDPLATNE",
+                "Description" : "předplatné",
+                "MonthlyPayment" : "217"
+              },
+              {
+                "Type" : "BEZNA_CENA_V_BALICKU",
+                "Description" : "běžná cena balíčku",
+                "MonthlyPayment" : "269"
+              },
+              {
+                "Type" : "PREDPLATNE_V_BALICKU",
+                "Description" : "předplatné v balíčku",
+                "MonthlyPayment" : "242"
+              }
+            ]
+          },
+          {
+            "Id" : "1_B",
+            "Name" : "Nečekám",
+            "Description" : "Vhodné pro kohokoliv, na cokoliv",
+            "Speed": "rychlost stahování až",
+            "Download" : "12 MB/s",
+            "Prices" : [
+              {
+                "Type" : "BEZNA_CENA",
+                "Description" : "běžná cena",
+                "MonthlyPayment" : "385"
+              },
+              {
+                "Type" : "PREDPLATNE",
+                "Description" : "předplatné",
+                "MonthlyPayment" : "300"
+              },
+              {
+                "Type" : "BEZNA_CENA_V_BALICKU",
+                "Description" : "běžná cena balíčku",
+                "MonthlyPayment" : "338"
+              },
+              {
+                "Type" : "PREDPLATNE_V_BALICKU",
+                "Description" : "předplatné v balíčku",
+                "MonthlyPayment" : "304"
+              }
+            ]
+          },
+          {
+            "Id" : "1_C",
+            "Name" : "Nestíhám",
+            "Description" : "Pro náročné uživatele, pro náročné datové přenosy",
+            "Speed": "rychlost stahování až",
+            "Download" : "20 MB/s",
+            "Prices" : [
+              {
+                "Type" : "BEZNA_CENA",
+                "Description" : "běžná cena",
+                "MonthlyPayment" : "585"
+              },
+              {
+                "Type" : "PREDPLATNE",
+                "Description" : "předplatné",
+                "MonthlyPayment" : "500"
+              },
+              {
+                "Type" : "BEZNA_CENA_V_BALICKU",
+                "Description" : "běžná cena balíčku",
+                "MonthlyPayment" : "498"
+              },
+              {
+                "Type" : "PREDPLATNE_V_BALICKU",
+                "Description" : "předplatné v balíčku",
+                "MonthlyPayment" : "448"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id" : "INTERNET_T2",
+        "Name" : "Optické připojení",
+        "Description": "Světelně rychlý internet",
+        "Notice" : "Ceny jsou uvedeny s DPH.",
+        "Packages": [
+         {
+            "Id" : "2_A",
+            "Name" : "Blikám",
+            "Description" : "Vhodné pro méně náročné klienty",
+            "Speed": "rychlost stahování a odesílání",
+            "Download" : "35 MB/s",
+            "Prices" : [
+              {
+                "Type" : "BEZNA_CENA",
+                "Description" : "běžná cena",
+                "MonthlyPayment" : "350"
+              },
+              {
+                "Type" : "PREDPLATNE",
+                "Description" : "předplatné",
+                "MonthlyPayment" : "299"
+              },
+              {
+                "Type" : "BEZNA_CENA_V_BALICKU",
+                "Description" : "běžná cena balíčku",
+                "MonthlyPayment" : "310"
+              },
+              {
+                "Type" : "PREDPLATNE_V_BALICKU",
+                "Description" : "předplatné v balíčku",
+                "MonthlyPayment" : "279"
+              }
+            ]
+          },
+          {
+            "Id" : "2_B",
+            "Name" : "Svítím",
+            "Description" : "Rychlostní varianta, která stačí všem",
+            "Speed": "rychlost stahování a odesílání",
+            "Download" : "75 MB/s",
+            "Prices" : [
+              {
+                "Type" : "BEZNA_CENA",
+                "Description" : "běžná cena",
+                "MonthlyPayment" : "550"
+              },
+              {
+                "Type" : "PREDPLATNE",
+                "Description" : "předplatné",
+                "MonthlyPayment" : "500"
+              },
+              {
+                "Type" : "BEZNA_CENA_V_BALICKU",
+                "Description" : "běžná cena balíčku",
+                "MonthlyPayment" : "470"
+              },
+              {
+                "Type" : "PREDPLATNE_V_BALICKU",
+                "Description" : "předplatné v balíčku",
+                "MonthlyPayment" : "423"
+              }
+            ]
+          },
+          {
+            "Id" : "2_C",
+            "Name" : "Zářím",
+            "Description" : "Pro extrémně náročné datové přenosy",
+            "Speed": "rychlost stahování a odesílání",
+            "Download" : "250 MB/s",
+            "Prices" : [
+              {
+                "Type" : "BEZNA_CENA",
+                "Description" : "běžná cena",
+                "MonthlyPayment" : "850"
+              },
+              {
+                "Type" : "PREDPLATNE",
+                "Description" : "předplatné",
+                "MonthlyPayment" : "800"
+              },
+              {
+                "Type" : "BEZNA_CENA_V_BALICKU",
+                "Description" : "běžná cena balíčku",
+                "MonthlyPayment" : "710"
+              },
+              {
+                "Type" : "PREDPLATNE_V_BALICKU",
+                "Description" : "předplatné v balíčku",
+                "MonthlyPayment" : "639"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id" : "INTERNET_T3",
+        "Name" : "Profi připojení",
+        "Description": "Internet do firem, škol a obcí",
+        "Notice" : "Ceny jsou uvedeny s DPH.",
+        "Packages": [
+         {
+            "Id" : "3_A",
+            "Name" : "Profi Standard",
+            "Description" : "Profesionální garantované připojení bez kontraktu",
+            "Speed": "kontaktujte nás na",
+            "Download" : "+ 420 606 606 035",
+            "Prices" : [
+              {
+                "Type" : "BEZNA_CENA",
+                "Description" : "běžná cena",
+                "MonthlyPayment" : ""
+              },
+              {
+                "Type" : "PREDPLATNE",
+                "Description" : "předplatné",
+                "MonthlyPayment" : ""
+              },
+              {
+                "Type" : "BEZNA_CENA_V_BALICKU",
+                "Description" : "běžná cena balíčku",
+                "MonthlyPayment" : ""
+              },
+              {
+                "Type" : "PREDPLATNE_V_BALICKU",
+                "Description" : "předplatné v balíčku",
+                "MonthlyPayment" : ""
+              }
+            ]
+          },
+           {
+            "Id" : "3_B",
+            "Name" : "Profi 12",
+            "Description" : "Profesionální garantované připojení na 12 měsíců",
+            "Speed": "kontaktujte nás na",
+            "Download" : "+ 420 606 606 035",
+            "Prices" : [
+              {
+                "Type" : "BEZNA_CENA",
+                "Description" : "běžná cena",
+                "MonthlyPayment" : ""
+              },
+              {
+                "Type" : "PREDPLATNE",
+                "Description" : "předplatné",
+                "MonthlyPayment" : ""
+              },
+              {
+                "Type" : "BEZNA_CENA_V_BALICKU",
+                "Description" : "běžná cena balíčku",
+                "MonthlyPayment" : ""
+              },
+              {
+                "Type" : "PREDPLATNE_V_BALICKU",
+                "Description" : "předplatné v balíčku",
+                "MonthlyPayment" : ""
+              }
+            ]
+          },
+          {
+            "Id" : "3_C",
+            "Name" : "Profi 24",
+            "Description" : "Profesionální garantované připojení na 24 měsíců",
+            "Speed": "kontaktujte nás na",
+            "Download" : "+ 420 606 606 035",
+            "Prices" : [
+              {
+                "Type" : "BEZNA_CENA",
+                "Description" : "běžná cena",
+                "MonthlyPayment" : ""
+              },
+              {
+                "Type" : "PREDPLATNE",
+                "Description" : "předplatné",
+                "MonthlyPayment" : ""
+              },
+              {
+                "Type" : "BEZNA_CENA_V_BALICKU",
+                "Description" : "běžná cena balíčku",
+                "MonthlyPayment" : ""
+              },
+              {
+                "Type" : "PREDPLATNE_V_BALICKU",
+                "Description" : "předplatné v balíčku",
+                "MonthlyPayment" : ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id" : "INTERNET_T4",
+        "Name" : "Mobilní připojení",
+        "Description": "Pohodlné surfování kdykoliv a kdekoliv",
+        "Notice" : "Ceny jsou uvedeny s DPH.",
+        "Packages": [
+         {
+            "Id" : "4_A",
+            "Name" : "Mobilní připojení",
+            "Description" : "Vhodné na emaily a prohlížení webu",
+            "Speed": "FUP",
+            "Speedup": "",
+            "Download" : "1 GB/měsíc",
+            "Prices" : [
+              {
+                "Type" : "BEZNA_CENA",
+                "MonthlyPayment" : "299"
+              },
+              {
+                "Type" : "ROK",
+                "MonthlyPayment" : "217"
+              },
+              {
+                "Type" : "DVA_ROKY",
+                "Description" : "Předplatné 24 měsíců", "MonthlyPayment" : "200"
+              }
+            ]
+          },
+          {
+            "Id" : "4_B",
+            "Name" : "Mobilní připojení Plus",
+            "Description" : "Vhodné i pro náročnější klienty a jejich potřeby",
+            "Speed": "FUP",
+            "Speedup": "",
+            "Download" : "5 GB/měsíc",
+            "Prices" : [
+              {
+                "Type" : "BEZNA_CENA",
+                "Description" : "běžná cena",
+                "MonthlyPayment" : "385"
+              },
+              {
+                "Type" : "PREDPLATNE",
+                "Description" : "předplatné",
+                "MonthlyPayment" : "300"
+              },
+              {
+                "Type" : "BEZNA_CENA_V_BALICKU",
+                "Description" : "běžná cena balíčku",
+                "MonthlyPayment" : "346"
+              },
+              {
+                "Type" : "PREDPLATNE_V_BALICKU",
+                "Description" : "předplatné v balíčku",
+                "MonthlyPayment" : "311"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id" : "TV",
+    "Name": "Televize",
+    "Css": "s2",
+    "Description": "popis televize",
+    "Tariffs": [
+      {
+        "Id" : "TV_T1",
+        "Name" : "TV SAT",
+        "Description": "Satelitní příjem televizního signálu",
+        "Notice" : "Ceny jsou uvedeny s DPH.",
+        "Packages": [
+          {
+            "Id" : "TV_1_A",
+            "Name" : "Koukám",
+            "Description" : "Základní nabídka programů",
+            "Speed": "",
+            "Speedup": "25 programů",
+            "Download" : "+ 3 HD programy",
+            "Prices" : [
+              {
+                "Type" : "BEZNA_CENA",
+                "Description" : "běžná cena",
+                "MonthlyPayment" : "149"
+              },
+              {
+                "Type" : "PREDPLATNE",
+                "Description" : "předplatné",
+                "MonthlyPayment" : "149"
+              },
+              {
+                "Type" : "BEZNA_CENA_V_BALICKU",
+                "Description" : "běžná cena balíčku",
+                "MonthlyPayment" : "125"
+              },
+              {
+                "Type" : "PREDPLATNE_V_BALICKU",
+                "Description" : "předplatné v balíčku",
+                "MonthlyPayment" : "113"
+              }
+            ]
+          },
+          {
+            "Id" : "TV_1_B",
+            "Name" : "Zírám",
+            "Description" : "Nabídka vhodná pro každého",
+            "Speed": "",
+            "Speedup": "67 programů",
+            "Download" : "+ 11 HD programy",
+            "Prices" : [
+              {
+                "Type" : "BEZNA_CENA",
+                "Description" : "běžná cena",
+                "MonthlyPayment" : "399"
+              },
+              {
+                "Type" : "PREDPLATNE",
+                "Description" : "předplatné",
+                "MonthlyPayment" : "399"
+              },
+              {
+                "Type" : "BEZNA_CENA_V_BALICKU",
+                "Description" : "běžná cena balíčku",
+                "MonthlyPayment" : "377"
+              },
+              {
+                "Type" : "PREDPLATNE_V_BALICKU",
+                "Description" : "předplatné v balíčku",
+                "MonthlyPayment" : "339"
+              }
+            ]
+          },
+          {
+            "Id" : "TV_1_C",
+            "Name" : "Žasnu",
+            "Description" : "Nabídka pro filmofily",
+            "Speed": "",
+            "Speedup": "95 programů",
+            "Download" : "+ 18HD programy",
+            "Prices" : [
+              {
+                "Type" : "BEZNA_CENA",
+                "Description" : "běžná cena",
+                "MonthlyPayment" : "1099"
+              },
+              {
+                "Type" : "PREDPLATNE",
+                "Description" : "předplatné",
+                "MonthlyPayment" : "1099"
+              },
+              {
+                "Type" : "BEZNA_CENA_V_BALICKU",
+                "Description" : "běžná cena balíčku",
+                "MonthlyPayment" : "1057"
+              },
+              {
+                "Type" : "PREDPLATNE_V_BALICKU",
+                "Description" : "předplatné v balíčku",
+                "MonthlyPayment" : "951"
+              }
+            ]
+          }
+        ]
+      },     
+      {
+        "Id" : "TV_T2",
+        "Name" : "TV IPTV",
+        "Description": "Příjem televizního signálu po síti",
+        "Notice" : "Ceny jsou uvedeny s DPH.",
+        "Packages": [
+          {
+            "Id" : "TV_2_A",
+            "Name" : "Koukám",
+            "Description" : "Základní nabídka programů",
+            "Speed": "",
+            "Speedup": "29 programů",
+            "Download" : "+ 3HD programy",
+            "Prices" : [
+              {
+                "Type" : "BEZNA_CENA",
+                "Description" : "běžná cena",
+                "MonthlyPayment" : "149"
+              },
+              {
+                "Type" : "PREDPLATNE",
+                "Description" : "předplatné",
+                "MonthlyPayment" : "149"
+              },
+              {
+                "Type" : "BEZNA_CENA_V_BALICKU",
+                "Description" : "běžná cena balíčku",
+                "MonthlyPayment" : "127"
+              },
+              {
+                "Type" : "PREDPLATNE_V_BALICKU",
+                "Description" : "předplatné v balíčku",
+                "MonthlyPayment" : "114"
+              }
+            ]
+          },
+          {
+            "Id" : "TV_2_B",
+            "Name" : "Zírám",
+            "Description" : "Nabídka vhodná pro každého",
+            "Speed": "",
+            "Speedup": "63 programů",
+            "Download" : "+ 4 HD programy",
+            "Prices" : [
+              {
+                "Type" : "BEZNA_CENA",
+                "Description" : "běžná cena",
+                "MonthlyPayment" : "399"
+              },
+              {
+                "Type" : "PREDPLATNE",
+                "Description" : "předplatné",
+                "MonthlyPayment" : "399"
+              },
+              {
+                "Type" : "BEZNA_CENA_V_BALICKU",
+                "Description" : "běžná cena balíčku",
+                "MonthlyPayment" : "355"
+              },
+              {
+                "Type" : "PREDPLATNE_V_BALICKU",
+                "Description" : "předplatné v balíčku",
+                "MonthlyPayment" : "320"
+              }
+            ]
+          },
+          {
+            "Id" : "TV_2_C",
+            "Name" : "Žasnu",
+            "Description" : "Nabídka pro filmofily",
+            "Speed": "",
+            "Speedup": "105 programů",
+            "Download" : "+ 19HD programy",
+            "Prices" : [
+              {
+                "Type" : "BEZNA_CENA",
+                "Description" : "běžná cena",
+                "MonthlyPayment" : "999"
+              },
+              {
+                "Type" : "PREDPLATNE",
+                "Description" : "předplatné",
+                "MonthlyPayment" : "999"
+              },
+              {
+                "Type" : "BEZNA_CENA_V_BALICKU",
+                "Description" : "běžná cena balíčku",
+                "MonthlyPayment" : "868"
+              },
+              {
+                "Type" : "PREDPLATNE_V_BALICKU",
+                "Description" : "předplatné v balíčku",
+                "MonthlyPayment" : "781"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id" : "PHONE",
+    "Name": "Telefon",
+    "Css": "s3",
+    "Description": "popis",
+    "Tariffs": [
+      {
+        "Id" : "PHONE_T1",
+        "Name" : "Tlapnet GSM",
+        "Description": "telefonování v síti GSM",
+        "Notice" : "Ceny jsou uvedeny s DPH.",
+        "Packages": [
+          {
+            "Id" : "PHONE_1_A",
+            "Name" : "Tlapnet Volám",
+            "Description" : "telefonování v síti GSM",
+            "Speed": "volné minuty v rámci sítě",
+            "Speedup": "SMS do všech sítí za 1,50 Kč",
+            "Download" : "50 min",
+            "Prices" : [
+              {
+                "Type" : "BEZNA_CENA",
+                "Description" : "běžná cena",
+                "MonthlyPayment" : "50"
+              },
+              {
+                "Type" : "PREDPLATNE",
+                "Description" : "předplatné",
+                "MonthlyPayment" : "50"
+              },
+              {
+                "Type" : "BEZNA_CENA_V_BALICKU",
+                "Description" : "běžná cena balíčku",
+                "MonthlyPayment" : "50"
+              },
+              {
+                "Type" : "PREDPLATNE_V_BALICKU",
+                "Description" : "předplatné v balíčku",
+                "MonthlyPayment" : "50"
+              }
+            ]
+          }
+        ]
+      },              
+      {
+        "Id" : "PHONE_T2",
+        "Name" : "Tlapnet VoIP",
+        "Description": "telefonování po síti",
+        "Notice" : "Ceny jsou uvedeny s DPH.",
+        "Packages": [
+          {
+            "Id" : "PHONE_2_A",
+            "Name" : "Tlapnet VoIP",
+            "Description" : "telefonování po sítí",
+            "Speed": "volání v rámci sítě",
+            "Speedup": "telefonování do mobilních sítí za 2 Kč/min",
+            "Download" : "ZDARMA",
+            "Prices" : [
+              {
+                "Type" : "BEZNA_CENA",
+                "Description" : "běžná cena",
+                "MonthlyPayment" : "0"
+              },
+              {
+                "Type" : "PREDPLATNE",
+                "Description" : "předplatné",
+                "MonthlyPayment" : "0"
+              },
+              {
+                "Type" : "BEZNA_CENA_V_BALICKU",
+                "Description" : "běžná cena balíčku",
+                "MonthlyPayment" : "0"
+              },
+              {
+                "Type" : "PREDPLATNE_V_BALICKU",
+                "Description" : "předplatné v balíčku",
+                "MonthlyPayment" : "0"
+              }
+            ]
+          }                  
+        ]
+      }
+    ]
+  }
+]

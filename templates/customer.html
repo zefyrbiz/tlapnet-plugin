@@ -1,0 +1,39 @@
+<h2>Objednávkový formulář</h2>
+<div class="tkform">
+  <div class="form-row">
+    <label for="customer-name">Jméno a příjmení</label> 
+    <input type="text" id="customer-name" name="customer[name]" ng-model="customer.name" required />
+    <span class="cleaner"></span>
+  </div>
+  <div class="form-row">
+    <label for="customer-email">Email</label> 
+    <input type="text" id="customer-email" name="customer[email]" ng-model="customer.email" required />
+    <span class="cleaner"></span>
+  </div>
+  <div class="form-row">
+    <label for="customer-phone">Telefon</label> 
+    <input type="text" id="customer-phone" name="customer[phone]" ng-model="customer.phone" required />
+    <span class="cleaner"></span>
+  </div>
+  <div class="form-row">
+    <label for="customer-city">Město</label> 
+    <input type="text" id="customer-city" name="customer[city]" ng-model="customer.city" required />
+    <span class="cleaner"></span>
+  </div>
+  <div class="form-row">
+    <label for="customer-street">Ulice</label> 
+    <input type="text" id="customer-street" name="customer[street]" ng-model="customer.street" required />
+    <span class="cleaner"></span>
+  </div>
+  <div class="form-row">
+    <label for="customer-house-number">Číslo popisné</label> 
+    <input type="text" id="customer-name-number" name="customer[houseNumber]" ng-model="customer.houseNumber" required />
+    <span class="cleaner"></span>
+  </div>
+
+  <div class="form-row tsorder">
+    <label><a title="Zpět na konfigurátor" href="#">Zpět</a></label>
+    <input type="submit" name="send" value="Odeslat" />
+    <span class="cleaner"></span>
+  </div>
+</div>
