@@ -10,8 +10,8 @@
   License: GPLv2 or later
  */
 
-define('TLAPNET_KONFIGURATOR_DIR', __DIR__);
-define('TLAPNET_KONFIGURATOR_TEMPLATE_DIR', __DIR__.'/templates');
+define('TLAPNET_KONFIGURATOR_DIR', dirname(__FILE__));
+define('TLAPNET_KONFIGURATOR_TEMPLATE_DIR', TLAPNET_KONFIGURATOR_DIR . '/templates');
 define('TLAPNET_KONFIGURATOR_PLUGIN_URL', plugin_dir_url(__FILE__));
 
 $parsedUrl = parse_url(TLAPNET_KONFIGURATOR_PLUGIN_URL);
@@ -20,7 +20,7 @@ define('TLAPNET_KONFIGURATOR_PLUGIN_URL_PATH', $parsedUrl['path']);
 add_action( 'plugins_loaded', 'Tlpanet_Konfigurator_Load_Plugin');
 
 function Tlpanet_Konfigurator_Load_Plugin() {
-  require_once __DIR__ . '/classes/Plugin.php';
+  require_once TLAPNET_KONFIGURATOR_DIR . '/classes/Plugin.php';
   $Tlapnet_Konfigurator = new Tlapnet_Konfigurator_Plugin();
   $Tlapnet_Konfigurator->init();  
 }
