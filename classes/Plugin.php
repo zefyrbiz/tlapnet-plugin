@@ -1,8 +1,7 @@
 <?php 
 
-namespace Tlapnet\Konfigurator;
 
-class Plugin {
+class Tlapnet_Konfigurator_Plugin {
   
   public function init() {
     require_once TLAPNET_KONFIGURATOR_DIR . '/classes/Exception.php';
@@ -19,7 +18,7 @@ class Plugin {
   
   function widgets_init() {
     include_once TLAPNET_KONFIGURATOR_DIR . '/classes/widget/Simple.php';
-    register_widget( '\Tlapnet\Konfigurator\Widget\Simple' );
+    register_widget( 'Tlapnet_Konfigurator_Widget_Simple' );
   }
   
   function wp_head() {

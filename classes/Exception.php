@@ -1,7 +1,5 @@
 <?php
 
-namespace Tlapnet\Konfigurator;
-
-class Exception extends \Exception {
+class Tlapnet_Konfigurator_Exception extends Exception {
   
 }

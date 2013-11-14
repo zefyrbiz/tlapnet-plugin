@@ -1,8 +1,6 @@
 <?php
 
-namespace Tlapnet\Konfigurator\Widget;
-
-class Simple extends \WP_Widget {
+class Tlapnet_Konfigurator_Widget_Simple extends WP_Widget {
 
   public function __construct() {
     parent::__construct(false, 'Tlapnet Konfigurátor', 'description=Description Widget');

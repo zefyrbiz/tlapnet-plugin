@@ -21,7 +21,7 @@ add_action( 'plugins_loaded', 'Tlpanet_Konfigurator_Load_Plugin');
 
 function Tlpanet_Konfigurator_Load_Plugin() {
   require_once __DIR__ . '/classes/Plugin.php';
-  $Tlapnet_Konfigurator = new Tlapnet\Konfigurator\Plugin();
+  $Tlapnet_Konfigurator = new Tlapnet_Konfigurator_Plugin();
   $Tlapnet_Konfigurator->init();  
 }
 
