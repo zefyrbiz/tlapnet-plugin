@@ -9,7 +9,7 @@
     TLAPNET_KONFIGURATOR_PLUGIN_URL_PATH = '<?= TLAPNET_KONFIGURATOR_PLUGIN_URL_PATH ?>';
   </script>
   <!--[if lte IE 8]>
-    <script src="<?= TLAPNET_KONFIGURATOR_PLUGIN_URL ?>js//json3.min.js"></script>
+    <script src="<?= TLAPNET_KONFIGURATOR_PLUGIN_URL ?>js/json3.min.js"></script>
   <![endif]-->  
   <script src="<?= TLAPNET_KONFIGURATOR_PLUGIN_URL ?>js/tlapnet-konfigurator.js?t=<?= time() ?>"></script>
  
@@ -19,11 +19,14 @@
       <div class="content-left">
         <div ng-view></div>
       </div>
-      <div class="tksum" ng-if="payments.totalPayments">
-        <div class="content-right" ng-if="payments.totalPayments">
-          <h2 class="tksum-heading">Shrnutí</h2>
-            <div class="tksbox" ng-repeat="service in services">
+      
+      <div class="content-right">
+      <h2 class="tksum-heading">Shrnutí</h2>         
+          <div class="tksum" ng-if="payments.totalPayments">
+            
+            <div ng-repeat="service in services">
               <div ng-if="service.selectedPackage != null">
+                <div class="tksbox">
                 <h3 ng-click="toggleService(service)">
                   {{service.Name}}
                   <span>
@@ -45,6 +48,7 @@
                   <div class="tksremove" title="Zrušit Tématické balíčky" ng-if="service.selectedPackage.channelSelected" ng-click="removeChannelsOfPackage(service.selectedPackage)">Zrušit Tématické balíčky</div>
                 </div>
                 <div class="tksremove" ng-click="removeService(service)" title="Zrušit službu">Zrušit službu</div>
+                </div>
               </div>
             </div>
 
@@ -54,15 +58,16 @@
                 <label for="tlapnet-subscription">Předplatit služby na 12 měsíců</label>
               </p>
               <p class="bo"><span class="tksdesc">Celkem měsíčně</span> <span class="tksprice">{{payments.monthlyPayments}},- Kč</span><span class="cleaner"></span></p>
-              <p class="bo"><span class="tksdesc">Celkem</span> <span class="tksprice">{{payments.totalPayments}},- Kč</span><span class="cleaner"></span></p>
-              Není započítána cena instalace. Liší se individuálně. Ceny jsou uvedeny s DPH.
-            </div>
+              <p class="bo"><span class="tksdesc">Celkem cena za 12 měsíců</span> <span class="tksprice">{{(payments.totalPayments)*12}},- Kč</span><span class="cleaner"></span></p>
+              Není započítána cena instalace.<br>Ceny jsou uvedeny s DPH. 
+            </div>      
 
             <div class="tsorder">
               <a title="Objednat služby online emailem" href="#Objednavka">Objednat</a>
             </div> 
 
         </div>
+      
       </div>
       <div class="cleaner"></div>
            
