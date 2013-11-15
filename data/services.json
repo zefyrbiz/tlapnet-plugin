@@ -368,8 +368,7 @@
             "Id" : "TV_1_A",
             "Name" : "Koukám",
             "Description" : "Základní nabídka programů",
-            "Speed": "",
-            "Speedup": "25 programů",
+            "Speed": "25 programů",
             "Download" : "+ 3 HD programy",
             "Prices" : [
               {
@@ -398,8 +397,7 @@
             "Id" : "TV_1_B",
             "Name" : "Zírám",
             "Description" : "Nabídka vhodná pro každého",
-            "Speed": "",
-            "Speedup": "67 programů",
+            "Speed": "67 programů",
             "Download" : "+ 11 HD programy",
             "Prices" : [
               {
@@ -428,9 +426,8 @@
             "Id" : "TV_1_C",
             "Name" : "Žasnu",
             "Description" : "Nabídka pro filmofily",
-            "Speed": "",
-            "Speedup": "95 programů",
-            "Download" : "+ 18HD programy",
+            "Speed": "95 programů",
+            "Download" : "+ 18 HD programy",
             "Prices" : [
               {
                 "Type" : "BEZNA_CENA",
@@ -466,9 +463,8 @@
             "Id" : "TV_2_A",
             "Name" : "Koukám",
             "Description" : "Základní nabídka programů",
-            "Speed": "",
-            "Speedup": "29 programů",
-            "Download" : "+ 3HD programy",
+            "Speed": "29 programů",
+            "Download" : "+ 3 HD programy",
             "Prices" : [
               {
                 "Type" : "BEZNA_CENA",
@@ -496,8 +492,7 @@
             "Id" : "TV_2_B",
             "Name" : "Zírám",
             "Description" : "Nabídka vhodná pro každého",
-            "Speed": "",
-            "Speedup": "63 programů",
+            "Speed": "63 programů",
             "Download" : "+ 4 HD programy",
             "Prices" : [
               {
@@ -526,9 +521,8 @@
             "Id" : "TV_2_C",
             "Name" : "Žasnu",
             "Description" : "Nabídka pro filmofily",
-            "Speed": "",
-            "Speedup": "105 programů",
-            "Download" : "+ 19HD programy",
+            "Speed": "105 programů",
+            "Download" : "+ 19 HD programy",
             "Prices" : [
               {
                 "Type" : "BEZNA_CENA",
