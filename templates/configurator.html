@@ -9,6 +9,7 @@
       </div>
       <div class="cleaner"></div>
 
+    <div class="cein">
       <div ng-repeat="tariff in service.Tariffs">
         <div ng-if="tariff.visible">
           <div ng-repeat="package in tariff.Packages" ng-click="togglePackage(package)" ng-class="{last: $last}" class="tkitem tkitemo{{package.selected}}">
@@ -27,17 +28,9 @@
               <strong ng-if="package.Download">{{package.Download}}</strong>
             </div> 
             <div class="tsupload">
-              <div ng-if="service.Id=='INTERNET'">
-                <span ng-if="package.Speedup">{{package.Speedup}}</span>  
-              </div>
-              <div ng-if="service.Id=='TV'">
-              </div>            
               <div ng-if="service.Id=='PHONE'">
                 <span ng-if="package.Speedup">{{package.Speedup}}</span>              
               </div> 
-              <div ng-if="service.Id=='BAL'">
-                <span ng-if="package.Speedup">{{package.Speedup}}</span>              
-              </div>
             </div>
             <div ng-repeat="price in package.Prices">
               <strong ng-if="price.Type == 'BEZNA_CENA'">
@@ -49,8 +42,8 @@
           </div>
         </div>
       </div>
-
       <div class="cleaner"></div>
+      </div>
 
       <div ng-repeat="tariff in service.Tariffs" class="tkpack">
         <div ng-repeat="package in tariff.Packages">
